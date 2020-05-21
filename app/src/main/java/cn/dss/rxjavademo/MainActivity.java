@@ -84,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
+
+
     private void testDoOnNext() {
         Observable.just(1)
                 .doOnNext(integer -> LogUtils.d("------>doOnNext() " + integer))
@@ -143,7 +145,6 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onSubscribe(Disposable d) {
-
                     }
 
                     @Override
